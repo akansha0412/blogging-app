@@ -1,5 +1,5 @@
 // BlogPost.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import blogData from '../mock/data';
 import '../styles/BlogPost.css'
@@ -7,6 +7,17 @@ import '../styles/BlogPost.css'
 function BlogPost() {
   const { id } = useParams();
   const blog = blogData.find((blog) => blog.id === parseInt(id));
+
+  useEffect(() => {
+    document.title = `${blog.title}`;
+  }, [blog]);
+  
+  useEffect(() => {
+    const metaDescription = document.createElement('meta');
+    metaDescription.name = 'description';
+    metaDescription.content = `${blog.description}`;
+    document.head.appendChild(metaDescription);
+  }, [blog]);
 
   if (!blog) {
     return <div>Blog post not found.</div>;

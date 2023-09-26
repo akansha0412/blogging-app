@@ -19,7 +19,7 @@ function EditBlog() {
 
   return (
     <div>
-      <div className='heading'>Create a New Blog Post</div>
+      <div className='heading'>Edit a Blog Post</div>
       <form onSubmit={handleSubmit}>
         <div className='inputField'>
         <label>

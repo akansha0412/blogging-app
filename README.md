@@ -20,3 +20,4 @@ The page will reload when you make changes.\
 - on hover of blog in blog list page, you will see edit and delete icon and user can edit and delete the blog.
 - currently using css but we can use material ui or tailwind css also.
 - On save of edit and add new blog, we can call the api using node js or usequery and update the list.
+- currently in useffect I am setting metadata but we can use helmet library also for same.

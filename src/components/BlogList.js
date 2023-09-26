@@ -1,5 +1,5 @@
 // BlogList.js
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import blogData  from '../mock/data';
 import { useHistory } from 'react-router-dom';
 import '../styles/BlogList.css'
@@ -12,6 +12,17 @@ function BlogList() {
 const history=useHistory();
 const [data,setBlogData]=useState(blogData)
 const [open,setOpen]=useState('')
+
+useEffect(() => {
+  document.title = 'Home Page - Your Blog';
+}, []);
+
+useEffect(() => {
+  const metaDescription = document.createElement('meta');
+  metaDescription.name = 'description';
+  metaDescription.content = 'Welcome to our blog homepage';
+  document.head.appendChild(metaDescription);
+}, []);
 
   function handleCardClick(id){
     history.push(`/blog/${id}`)
