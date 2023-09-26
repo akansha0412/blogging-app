@@ -1,0 +1,36 @@
+label{
+    display: flex;
+    gap:5px;
+    color:#868686;
+    width:10%
+}
+input{
+    color:#e7e7e7;
+    background-color: unset;
+    border: unset;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 80%;
+    font-size: 14px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 20px;
+}
+textarea{
+    color:#e7e7e7;
+    background-color: unset;
+    border: unset;
+    width: 80%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    font-family: roboto;
+}
+.inputField{
+    display: flex;
+    
+}
+.submitButton{
+    margin-right: 150px;
+}
