@@ -15,7 +15,7 @@ function DeleteConfirmModal({onConfirm,onClose,id}) {
       <div>Are you sure? You want to delete this blog</div>
       <div className='modal-buttons'>
         <button className='cancel-button' onClick={onClose}>Cancel</button>
-        <button className='confirm-button' onClick={()=>onConfirm(id)}>Confirm</button>
+        <button className='confirm-button' onClick={()=>onConfirm(id)}>Delete</button>
       </div>
     </div>
   </div>

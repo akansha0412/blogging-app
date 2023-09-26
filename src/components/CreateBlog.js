@@ -51,7 +51,7 @@ function CreateBlog() {
             onChange={(e) => setContent(e.target.value)}
           />
         </div>
-        <button className='submitButton' type="submit">Submit</button>
+        <button className='submitButton' type="submit">Save</button>
       </form>
     </div>
   );

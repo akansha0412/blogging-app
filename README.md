@@ -13,6 +13,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 
+## Documentation
 
-
-
+- This app contains main page which shows list og blogs.
+- On click of blog, you will got to the particular blog details page.
+- on hover of blog in blog list page, you will see edit and delete icon and user can edit and delete the blog.
+- currently using css but we can use material ui or tailwind css also.
+- On save of edit and add new blog, we can call the api using node js or usequery and update the list.
